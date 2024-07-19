@@ -1,0 +1,82 @@
+syntax = "proto3";
+
+option csharp_namespace = "RiraGrpc.Protos";
+
+package customerCrud;
+
+service CustomerCrud{
+
+	// Create
+	rpc Create(CreateCustomerRequest) returns ( CreateCustomerResponse) {}
+
+	
+	// Read single
+	rpc Read(ReadCustomerRequest) returns (ReadCustomerResponse) {}
+
+	// Read list
+	rpc List(GetAllRequest) returns (GetAllResponse) {}
+
+	// Update
+	rpc Update (UpdateCustomerRequest) returns (UpdateCustomerResponse) {}
+
+	// Delete
+	rpc Delete (DeleteCustomerRequest) returns (DeleteCustomerResponse) {}
+}
+
+message CreateCustomerRequest {
+	string Name = 1;
+	string Family  = 2;
+	string NationalNumber = 3;
+	Date Birthday = 4;
+}
+
+message CreateCustomerResponse {
+
+	string Response = 1;
+
+}
+
+
+
+message ReadCustomerRequest {
+	int32 id = 1;
+}
+
+message ReadCustomerResponse {
+	int32 id = 1;
+	string Name = 2;
+	string Family  = 3;
+	string NationalNumber = 4;
+	Date Birthday = 5;
+}
+
+message GetAllRequest {}
+
+message GetAllResponse {
+	repeated ReadCustomerResponse customers = 1;
+}
+
+message UpdateCustomerRequest {
+	int32 id = 1;
+	string Name = 2;
+	string Family  = 3;
+	string NationalNumber = 4;
+	Date Birthday = 5;
+}
+  
+message UpdateCustomerResponse {
+	string Response = 1;
+}
+  
+message DeleteCustomerRequest {
+	int32 id = 1;
+}
+  
+message DeleteCustomerResponse {
+	string Response = 1;
+}
+message Date {
+	int32 year = 1;
+	int32 month = 2;
+	int32 day = 3;
+}

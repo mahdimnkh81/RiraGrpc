@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Protobuf Include="Protos\greet.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\customer.proto" GrpcServices="Server" />
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Rira.Application\Rira.Application.csproj" />
     <ProjectReference Include="..\Rira.Infrastructure.EFCore\Rira.Infrastructure.EFCore.csproj" />
   </ItemGroup>
 

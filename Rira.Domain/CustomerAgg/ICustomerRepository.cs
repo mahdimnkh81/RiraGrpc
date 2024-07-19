@@ -4,11 +4,11 @@ namespace Rira.Domain.CustomerAgg
 {
     public interface ICustomerRepository
     {
-        Customer GetBy(int id);
-        int Create(CreateCustomer customer);
-        EditCustomer Update(int id);
-        int Delete(int id);
-        List<CustomerViewModel> GetAll();
+        Task<Customer> GetBy(int id);
+        Task Create(Customer customer);
+        Task<EditCustomer> Update(EditCustomer edit);
+        Task<int> Delete(int id);
+        Task <List<CustomerViewModel>> GetAll();
 
 
 

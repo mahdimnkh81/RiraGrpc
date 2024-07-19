@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rira.Application.Contract\Rira.Application.Contract.csproj" />
+    <ProjectReference Include="..\Rira.Domain\Rira.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

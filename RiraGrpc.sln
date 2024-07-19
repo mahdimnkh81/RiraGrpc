@@ -7,17 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiraGrpc", "RiraGrpc\RiraGr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3A3D8D5A-A188-4233-885B-0B9220058F18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rira.Domain", "Rira.Domain\Rira.Domain.csproj", "{60398A9A-50B4-436E-A20A-8D113FAEC7AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rira.Domain", "Rira.Domain\Rira.Domain.csproj", "{60398A9A-50B4-436E-A20A-8D113FAEC7AA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C944F889-37FE-487C-AAA7-F94C282E3240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rira.Application", "Rira.Application\Rira.Application.csproj", "{76469FF9-6916-4320-8D20-4AB22E2759FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rira.Application", "Rira.Application\Rira.Application.csproj", "{76469FF9-6916-4320-8D20-4AB22E2759FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rira.Application.Contract", "Rira.Application.Contract\Rira.Application.Contract.csproj", "{1AD6CA01-4DEC-4D05-9E95-A5A9501A90DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rira.Application.Contract", "Rira.Application.Contract\Rira.Application.Contract.csproj", "{1AD6CA01-4DEC-4D05-9E95-A5A9501A90DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{3BBE632D-3D42-447C-BAE8-E04655F3DAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rira.Infrastructure.EFCore", "Rira.Infrastructure.EFCore\Rira.Infrastructure.EFCore.csproj", "{874C29A2-5CC9-4A83-86B5-F892E30CFCAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rira.Infrastructure.EFCore", "Rira.Infrastructure.EFCore\Rira.Infrastructure.EFCore.csproj", "{874C29A2-5CC9-4A83-86B5-F892E30CFCAF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

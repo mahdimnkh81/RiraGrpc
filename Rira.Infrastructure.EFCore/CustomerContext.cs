@@ -6,7 +6,7 @@ namespace Rira.Infrastructure.EFCore
 {
     public class CustomerContext : DbContext
     {
-        DbSet<Customer> _customerSet { get; set; }
+        public DbSet<Customer> Customers { get; set; }
 
         public CustomerContext(DbContextOptions<CustomerContext> options) : base(options)
         {
