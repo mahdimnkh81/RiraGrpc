@@ -17,6 +17,8 @@ namespace Rira.Infrastructure.EFCore.Repository
         public async Task<Customer> GetBy(int id)
         {
             var customer = await _context.Customers.FindAsync(id);
+            if (customer == null)
+                throw new Exception($"No Task with Id {id}");
             return customer;
         }
 

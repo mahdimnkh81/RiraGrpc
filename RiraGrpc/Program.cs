@@ -18,7 +18,7 @@ builder.Services.AddTransient<ICustomerApplication, CustomerApplication>();
 
 
 
-builder.Services.AddGrpc();
+builder.Services.AddGrpc().AddJsonTranscoding();
 
 var app = builder.Build();
 

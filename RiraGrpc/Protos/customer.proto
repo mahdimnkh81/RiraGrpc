@@ -2,25 +2,54 @@ syntax = "proto3";
 
 option csharp_namespace = "RiraGrpc.Protos";
 
+import "google/api/annotations.proto";
+
 package customerCrud;
 
 service CustomerCrud{
 
 	// Create
-	rpc Create(CreateCustomerRequest) returns ( CreateCustomerResponse) {}
+	rpc Create(CreateCustomerRequest) returns ( CreateCustomerResponse) {
+	
+		option (.google.api.http) = {
+			post: "/v1/customer",
+			body: "*"
+		};
+	}
 
 	
 	// Read single
-	rpc Read(ReadCustomerRequest) returns (ReadCustomerResponse) {}
+	rpc Read(ReadCustomerRequest) returns (ReadCustomerResponse) {
+	
+		option (.google.api.http) = {
+			get: "/v1/customer/{id}"
+		};
+	}
 
 	// Read list
-	rpc List(GetAllRequest) returns (GetAllResponse) {}
+	rpc List(GetAllRequest) returns (GetAllResponse) {
+	
+		option (.google.api.http) = {
+			get: "/v1/customer"
+		};
+	}
 
 	// Update
-	rpc Update (UpdateCustomerRequest) returns (UpdateCustomerResponse) {}
+	rpc Update (UpdateCustomerRequest) returns (UpdateCustomerResponse) {
+	
+		option (.google.api.http) = {
+			put : "/v1/customer",
+			body: "*"
+		};
+	}
 
 	// Delete
-	rpc Delete (DeleteCustomerRequest) returns (DeleteCustomerResponse) {}
+	rpc Delete (DeleteCustomerRequest) returns (DeleteCustomerResponse) {
+	
+		option (.google.api.http) = {
+			delete: "/v1/customer/{id}"
+		};
+	}
 }
 
 message CreateCustomerRequest {
